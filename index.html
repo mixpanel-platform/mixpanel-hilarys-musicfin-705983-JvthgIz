@@ -33,7 +33,7 @@
             type: 'general'
             }
           MP.api.query('api/2.0/events/top/', params).done(function(results) {
-            console.log(results)
+            
             eventGraph.MPChart('setData', results);
             eventTable.MPTable('setData', results);
           });
