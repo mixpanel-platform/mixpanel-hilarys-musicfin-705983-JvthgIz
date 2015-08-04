@@ -29,9 +29,9 @@
             dateRange = dateSelect.MPDatepicker('value');
 
         if (dateRange) {
-          params = [{
-            'type': 'general'
-            }]
+          params = {
+            type: 'general'
+            }
           MP.api.query('events/top', params).done(function(results) {
             console.log(results)
             eventGraph.MPChart('setData', results);
