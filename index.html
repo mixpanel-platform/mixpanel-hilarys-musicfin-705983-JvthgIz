@@ -29,7 +29,7 @@
             dateRange = dateSelect.MPDatepicker('value');
 
         if (dateRange) {
-          MP.api.query('events/top','general').done(function(results) {
+          MP.api.query('events/top',['type':'general']).done(function(results) {
             console.log(results)
             eventGraph.MPChart('setData', results);
             eventTable.MPTable('setData', results);
