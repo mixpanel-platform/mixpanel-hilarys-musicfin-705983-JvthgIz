@@ -30,7 +30,7 @@
 
         if (dateRange) {
           params = [{
-            type: 'general'
+            'type': 'general'
             }]
           MP.api.query('events/top', params).done(function(results) {
             console.log(results)
